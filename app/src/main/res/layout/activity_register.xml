@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.guidance.admin.railwayreservation.RegisterActivity">
+
+<TextView
+    android:id="@+id/tvregistration"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="Registration"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    />
+
+<EditText
+    android:id="@+id/etname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tvregistration"
+    android:hint="Username"
+    android:inputType="textPersonName"
+    />
+
+<EditText
+    android:id="@+id/etdob"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/etname"
+    android:hint="Date of Birth"
+    android:inputType="date"
+    />
+
+<EditText
+    android:id="@+id/etnumber"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/etdob"
+    android:hint="Phone Number"
+    android:inputType="phone"
+     />
+
+<TextView
+    android:id="@+id/tvgender"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/etnumber"
+    android:text="Gender  "
+    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+    />
+
+<RadioButton
+    android:id="@+id/malebutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/tvgender"
+    android:layout_below="@id/etnumber"
+    android:text="Male  "
+    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+    />
+
+<RadioButton
+    android:id="@+id/femalebutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/malebutton"
+    android:layout_below="@id/etnumber"
+    android:text="Female  "
+    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+    />
+
+    <EditText
+    android:id="@+id/etemail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tvgender"
+    android:hint="Email-ID"
+    android:inputType="textEmailAddress"
+     />
+
+<EditText
+    android:id="@+id/etpassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/etemail"
+    android:hint="Password"
+    android:inputType="textPassword"
+     />
+
+<EditText
+    android:id="@+id/etcpassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/etpassword"
+    android:hint="Confirm Password"
+    android:inputType="textPassword"
+     />
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="118dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/etcpassword"
+        android:layout_centerHorizontal="true"
+        android:onClick="onregisterClick"
+        android:text="Register" />
+
+</android.widget.RelativeLayout>
